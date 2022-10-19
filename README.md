@@ -8,6 +8,7 @@ insert into member(name, username, passwork, follower_count) values("egg", "egg4
 insert into member(name, username, passwork, follower_count) values("pai", "pai789", "ppp", 2200);
 ```
 ![image](https://github.com/MillieYeh/week5/blob/main/image/3-1-add_data.png)
+<img width="50%" height="50%" src="https://github.com/MillieYeh/week5/blob/main/image/3-1-add_data.png"/>
 
 - 使用 SELECT 指令取得所有在 member 資料表中的會員資料。
 ```SQL
