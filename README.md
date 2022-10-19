@@ -60,18 +60,18 @@ update member set name = 'test2' where username = 'test';
 select count( * ) from member;
 ```
 
-<img width="80%" height="80%" src="https://github.com/MillieYeh/week5/blob/main/image/4-1-member.png"/>
+<img width="40%" height="40%" src="https://github.com/MillieYeh/week5/blob/main/image/4-1-member.png"/>
 
 - 取得 member 資料表中，所有會員 follower_count 欄位的總和。
 ```SQL
 select sum(follower_count) from member;
 ```
 
-<img width="80%" height="80%" src="https://github.com/MillieYeh/week5/blob/main/image/4-2-sum.png"/>
+<img width="50%" height="50%" src="https://github.com/MillieYeh/week5/blob/main/image/4-2-sum.png"/>
 
 - 取得 member 資料表中，所有會員 follower_count 欄位的平均數。
 ```SQL
 select avg(follower_count) from member;
 ```
 
-<img width="80%" height="80%" src="https://github.com/MillieYeh/week5/blob/main/image/4-3-avg.png"/>
+<img width="50%" height="50%" src="https://github.com/MillieYeh/week5/blob/main/image/4-3-avg.png"/>
