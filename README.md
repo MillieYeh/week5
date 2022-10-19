@@ -7,44 +7,50 @@ insert into member(name, username, passwork, follower_count) values("coco", "coc
 insert into member(name, username, passwork, follower_count) values("egg", "egg456", "eee", 350);
 insert into member(name, username, passwork, follower_count) values("pai", "pai789", "ppp", 2200);
 ```
-![image](https://github.com/MillieYeh/week5/blob/main/image/3-1-add_data.png)
-<img width="50%" height="50%" src="https://github.com/MillieYeh/week5/blob/main/image/3-1-add_data.png"/>
+
+<img width="80%" height="80%" src="https://github.com/MillieYeh/week5/blob/main/image/3-1-add_data.png"/>
 
 - 使用 SELECT 指令取得所有在 member 資料表中的會員資料。
 ```SQL
 select * from member;
 ```
-![image](https://github.com/MillieYeh/week5/blob/main/image/3-2-member1.png)
+
+<img width="80%" height="80%" src="https://github.com/MillieYeh/week5/blob/main/image/3-2-member1.png"/>
 
 - 使用 SELECT 指令取得所有在 member 資料表中的會員資料，並按照 time 欄位，由近到遠排序。
 ```SQL
 select * from member order by time desc;
 ```
-![image](https://github.com/MillieYeh/week5/blob/main/image/3-3-member2.png)
+
+<img width="80%" height="80%" src="https://github.com/MillieYeh/week5/blob/main/image/3-3-member2.png"/>
 
 - 使用 SELECT 指令取得 member 資料表中第 2 ~ 4 共三筆資料，並按照 time 欄位，由近到遠排序。
 ```SQL
 select * from member order by time desc limit 1,3;
 ```
-![image](https://github.com/MillieYeh/week5/blob/main/image/3-4-member3.png)
+
+<img width="80%" height="80%" src="https://github.com/MillieYeh/week5/blob/main/image/3-4-member3.png"/>
 
 - 使用 SELECT 指令取得欄位 username 是 test 的會員資料。
 ```SQL
 select * from member where username = "test";
 ```
-![image](https://github.com/MillieYeh/week5/blob/main/image/3-5-test1.png)
+
+<img width="80%" height="80%" src="https://github.com/MillieYeh/week5/blob/main/image/3-5-test1.png"/>
 
 - 使用 SELECT 指令取得欄位 username 是 test、且欄位 password 也是 test 的資料。
 ```SQL
 select * from member where username = "test" and passwork = "test";
 ```
-![image](https://github.com/MillieYeh/week5/blob/main/image/3-6-test2.png)
+
+<img width="80%" height="80%" src="https://github.com/MillieYeh/week5/blob/main/image/3-6-test2.png"/>
 
 - 使用 UPDATE 指令更新欄位 username 是 test 的會員資料，將資料中的 name 欄位改成 test2。
 ```SQL
 update member set name = 'test2' where username = 'test';
 ```
-![image](https://github.com/MillieYeh/week5/blob/main/image/3-7-test3.png)
+
+<img width="80%" height="80%" src="https://github.com/MillieYeh/week5/blob/main/image/3-7-test3.png"/>
 
 
 ### 要求四: SQL Aggregate Functions
@@ -53,16 +59,19 @@ update member set name = 'test2' where username = 'test';
 ```SQL
 select count( * ) from member;
 ```
-![image](https://github.com/MillieYeh/week5/blob/main/image/4-1-member.png)
+
+<img width="80%" height="80%" src="https://github.com/MillieYeh/week5/blob/main/image/4-1-member.png"/>
 
 - 取得 member 資料表中，所有會員 follower_count 欄位的總和。
 ```SQL
 select sum(follower_count) from member;
 ```
-![image](https://github.com/MillieYeh/week5/blob/main/image/4-2-sum.png)
+
+<img width="80%" height="80%" src="https://github.com/MillieYeh/week5/blob/main/image/4-2-sum.png"/>
 
 - 取得 member 資料表中，所有會員 follower_count 欄位的平均數。
 ```SQL
 select avg(follower_count) from member;
 ```
-![image](https://github.com/MillieYeh/week5/blob/main/image/4-3-avg.png)
+
+<img width="80%" height="80%" src="https://github.com/MillieYeh/week5/blob/main/image/4-3-avg.png"/>
