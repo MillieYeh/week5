@@ -44,3 +44,24 @@ select * from member where username = "test" and passwork = "test";
 update member set name = 'test2' where username = 'test';
 ```
 ![image](https://github.com/MillieYeh/week5/blob/main/image/3-7-test3.png)
+
+
+### 要求四: SQL Aggregate Functions
+
+- 取得 member 資料表中，總共有幾筆資料 ( 幾位會員 )。
+```SQL
+select count( * ) from member;
+```
+![image](https://github.com/MillieYeh/week5/blob/main/image/4-1-member.png)
+
+- 取得 member 資料表中，所有會員 follower_count 欄位的總和。
+```SQL
+select sum(follower_count) from member;
+```
+![image](https://github.com/MillieYeh/week5/blob/main/image/4-2-sum.png)
+
+- 取得 member 資料表中，所有會員 follower_count 欄位的平均數。
+```SQL
+select avg(follower_count) from member;
+```
+![image](https://github.com/MillieYeh/week5/blob/main/image/4-3-avg.png)
